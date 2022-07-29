@@ -14,7 +14,6 @@ function Resume() {
         <div className='resume-skills_container'>
           <p>Front-End Developer</p>
           <p>FullCycle Development Group/DECIBEL KC, Overland Park, KS</p>
-          <span>June 2017–Present</span>
           <ul>
             <li>Prepared and worked in required Languages, being able to read documentation and translate it to necessary needs to meet clientele expectations or wants. If it was a new language, being able to pick it up quickly and meet any time restraints.</li>
             <li>Developed and QA my own work. Working for a small team we often had to QA our own development, such has helped me gain experience and a good eye for developing quality code and foresee any possible future bugs.</li>
@@ -45,6 +44,11 @@ function Resume() {
             <li>Adaptability</li>
             <li>Decision making and planning</li>
           </ul>
+          </div>
+          <div className='project-exp__container'>
+            <h2>Projects</h2>
+            <p>Professional Projects Upon Request</p>
+            <p>github.com/Kevetic for repos</p>
           </div>
           </div>
         </div>
