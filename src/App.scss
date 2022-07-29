@@ -1,5 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
+html {
+  min-height: 100%;
+}
 body {
-  background-color: rgba(41,86,111,1);
+  font-family: 'Play', sans-serif;
+  min-height: 100%;
+  background-image: url('./Components//assets/eatsleepcoderepeat.jpg');
+  background-size: contain;
   color: #fff;
   & button {
     color: #fff;
@@ -11,17 +19,25 @@ body {
     text-decoration: none;
   }
   & a:hover {
-    color: black !important;
+    color:  #FBE4E0 !important;
     text-decoration: underline !important;
   }
 }
+h1, h2 ,h2 {
+  font-size: 24px;
+  background: -webkit-linear-gradient(#eee, #54ADB7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+nav {
+  height: 40px;
+  border-bottom: 1px solid rgb(84, 173, 183, .5);
+}
 header {
-  background-color: transparent;
-  border-bottom: 1px solid rgb(36, 62, 77);
+  background-color: black;
   & ul {
     margin: 0 auto;
     display: flex;
-    text-align: center;
     justify-content: center;
   }
   & li {
@@ -29,78 +45,51 @@ header {
     margin: 10px;
   }
 }
-
-.intro.show {
-  opacity: 1;
-  background: linear-gradient(90deg, rgba(18,22,73,1) 0%, rgba(41,86,111,1) 50%, rgba(36,112,115,1) 100%);
-  position: absolute;
-  height: 100vh;
+header.show {
+  font-size: 20px;
+  transition: 1s;
   width: 100vw;
-  overflow: hidden;
-  animation: fadeIn .5s;
+  height: fit-content;
+  & li:first-child {
+    text-decoration: underline;
+  }
 }
-.intro__button:hover {
-    transition: .5s;
-    font-size: 15px;
-    box-shadow: 1px 1px 1px #13636c;
-    color: #a3b5d7 !important;
-}
-.intro__button.show {
-  padding: 20px;
+header.hide {
+  top: 0%;
   position: absolute;
-  right: 50%;
-  bottom: 2%;
-  cursor: pointer;
-  border-radius: 10px;
-  background-color: transparent;
-  color: #fff;
-  box-shadow: 2px 2px 2px #13636c;
-  border: none;
-}
-button.intro__button.hide {
-  background-color: transparent;
-  padding: 5px;
-  position: absolute;
-  border-radius: 10px;
-  cursor: pointer;
-  margin-top: 5px;
-  width: 80px;
+  width: 100%;
 }
 .intro.hide {
   visibility: hidden;
   opacity: 0;
-  background-color: black;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  background: #FAF9F6;
-  animation: fadeOut 1s;
-  transition: .3s;
+  height: 0px;
+  transition: 2s;
 }
-
-@keyframes fadeOut {
-  0% {opacity: 1;}
-  50% {opacity: .3;}
-  100% {opacity: 0;} 
-} 
-@keyframes fadeIn {
-  0% {opacity: 0;}
-  50% {opacity: .3;}
-  100% {opacity: 1;} 
-} 
-
-.profile__container {
-  top: 10%;
-  display: flex;
-  position: relative;
-  color: #FAF9F6;
-  width: 60%;
+.intro.show {
+  transition: 2s;
+  height: 350px;
+}
+.nav__footer {
   margin: 0 auto;
+  font-size: 18px;
+  background: black;
+  padding: 50px;
+  & a {
+    text-decoration:underline;
+  }
+}
+.nav__footer.hide {
+  visibility: hidden;
+  height: 0;
+}
+.profile__container {
+  display: flex;
+  width: 60%;
+  margin: 70px auto;
   gap: 5%;
   & .profile-info__container {
     width: 50%;
-    font-size: 14px;
+    font-size: 18px;
     color: #fff;
   }
   .profile-img__container {
@@ -118,14 +107,49 @@ button.intro__button.hide {
 }
 
 .about__container {
+  border-radius: 10px;
+  background: black;
+  border: 1px solid rgb(84, 173, 183, .5);
+  padding: 100px;
+  opacity: .9;
   width: 80%;
   margin: 0 auto;
-  & .about-skills_container {
+  font-size: 20px;
+  & .about-skills__container {
     display: flex;
     justify-content: center;
   }
   & li {
     list-style: none;
     margin: 10px;
+  }
+  & span {
+    text-decoration: underline;
+  }
+}
+.resume__container {
+  border-radius: 10px;
+  background: black;
+  padding: 100px;
+  opacity: .9;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 20px;
+  & p, span {
+    margin: 0px;
+  }
+  & .profesional-exp__container {
+    display: flex;
+  }
+  & .resume-skills__container {
+    display: flex;
+    justify-content: center;
+  }
+  & li {
+    list-style: disc;
+    margin: 10px;
+  }
+  & span {
+    text-decoration: underline;
   }
 }

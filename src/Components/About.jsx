@@ -1,35 +1,39 @@
 import React from 'react'
+import {motion} from 'framer-motion'
 
 function About() {
   return (
-    <div className='about__container'>
-        <h1>Kevin Le</h1>
-        <p>I’ve been an engineer for a little over 5 years. Most of those years spent at a start up company in a front-end developer role. I have experience in the fundamentals such as HTML,CSS,Javascript and I’m experienced in the MERN stack, emphasis on React using tools such as redux and contextapi to help. i’ve also been exposed to sprinkles of other tech stacks and I like to consider myself a google search expert. I’m familiar with working in an agile environment. I have used to systems like WATSON,JIRA, WRIKE and Slack as ticket management, transactional and communication. 
-        </p>
+    <motion.div className='about__container'
+        initial={{width: 0}}
+        animate={{width: "50%"}}
+        exit={{x: window.innerWidth, transition: {duration: 1}}}>
+        <h1>About Me: <span>Kevin Le</span></h1>
+        <p>I’ve been an engineer for a little over 5 years. Most of those years spent at a start up company in a front-end developer role. i am a software developer who is passionate about tech and eager to always expand my knowledge and skills. I'd love to work with a company that matches my values of how I believe people should be treated and is reflected in how they treat their clients/customers. I’m excited to use my talents of strong interpersonal communication paired with my ability to adapt quickly alongside my skills in web development to become a part of a fast-paced, quality-driven team to build better experiences for a growing world. Feel free to take a look at the resume section of this portfolio.
+          </p>
         <h2>Skills/EXP</h2>
-        <div className='about-skills_container'>
+        <div className='about-skills__container'>
           <ul>
             <li>HTML5</li>
-            <li>CSS</li>
+            <li>CSS/SASS</li>
             <li>Javascript</li>
           </ul>
           <ul>
             <li>React</li>
-            <li>ContextAPI</li>
-            <li>Redux</li>
+            <li>Bootstrap</li>
+            <li>MySQL</li>
           </ul>
           <ul>
-            <li>SASS</li>
+            <li>Axios</li>
             <li>TailwindCSS</li>
-            <li>MaterialUI</li>
+            <li>Express.Js</li>
           </ul>
           <ul>
-            <li>RestfulAPIs</li>
+            <li>Node.js</li>
             <li>PHP/WP</li>
             <li>Version Control: GitHub/Bitbucket</li>
           </ul>
         </div>
-      </div>
+      </motion.div>
   )
 }
 
