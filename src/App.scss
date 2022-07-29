@@ -1,5 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
 
+.buttons {
+  margin: 10%;
+  text-align: center;
+}
+
+.btn-hover {
+  padding: 10px 20px;
+  width: 200px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #eee;
+  cursor: pointer;
+  margin: 20px;
+  height: 55px;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+  background-position: 100% 0;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+  outline: none;
+}
+
+.btn-hover.color-8 {
+  background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
+  box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+}
+
 html {
   min-height: 100%;
 }
@@ -7,16 +48,8 @@ body {
   overflow-x: hidden;
   font-family: 'Play', sans-serif;
   min-height: 100%;
-  background-image: url('./Components//assets/eatsleepcoderepeat.jpg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: rgb(17,17,17);
-  color: #fff;
-  & button {
-    color: #fff;
-    border: 2px solid #13636c;
-    margin: 5px;
-  }
+  background-color: white;
+  color: black;
   & a {
     color: white;
     text-decoration: none;
@@ -32,7 +65,7 @@ body {
 }
 h1, h2 ,h2 {
   font-size: 24px;
-  background: -webkit-linear-gradient(#eee, #54ADB7);
+  background: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -40,8 +73,14 @@ nav {
   height: 40px;
   border-bottom: 1px solid rgb(84, 173, 183, .5);
 }
+.nav-ul.show {
+  padding: 17px;
+}
+.nav-ul.hide {
+  padding: 20px;
+}
 header {
-  background-color: black;
+  background-color: white;
   & ul {
     margin: 0 auto;
     display: flex;
@@ -79,7 +118,7 @@ header.hide {
 .nav__footer {
   margin: 0 auto;
   font-size: 18px;
-  background: black;
+  background: white;
   padding: 50px;
   & a {
     text-decoration:underline;
@@ -97,12 +136,12 @@ header.hide {
   & .profile-info__container {
     width: 50%;
     font-size: 18px;
-    color: #fff;
+    color: black;
   }
   .profile-img__container {
     box-sizing:border-box;
-    box-shadow:1px 1px 1px #a3b5d7;
-    height:25vw;
+    border: 1px solid black;
+    height:23vw;
     float:left;
     width:25vw;
     margin-right:1vw;
@@ -115,7 +154,8 @@ header.hide {
 
 .about__container {
   border-radius: 10px;
-  background: black;
+  background: white;
+  border: 1px solid rgb(84, 173, 183, .5);
   padding: 100px;
   opacity: .9;
   width: 80%;
@@ -135,7 +175,8 @@ header.hide {
 }
 .resume__container {
   border-radius: 10px;
-  background: black;
+  background: white;
+  border: 1px solid rgb(84, 173, 183, .5);;
   padding: 100px;
   opacity: .9;
   width: 80%;

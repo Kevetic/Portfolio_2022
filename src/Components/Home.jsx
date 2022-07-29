@@ -39,21 +39,17 @@ function Home() {
     </div>
     <header className={isActive ? 'show' : 'hide'}>
       <nav>
-        <motion.ul
-          initial={{width: 0}}
-          animate={{width: "100%"}}
-          exit={{x: window.innerWidth, transition: {duration: 0.1}}}
-          >
+        <ul className={`nav-ul ${isActive ? 'show' : 'hide'}`}>
           <li>
-            <Link to='/' className='btn-1' onClick={()=>setIsActive(true)}>Home</Link>
+            <Link to='/' className='btn-hover color-8' onClick={()=>setIsActive(true)}>Home</Link>
           </li>
           <li>
-            <Link to='/about' onClick={()=>setIsActive(false)}>About</Link>
+            <Link to='/about' className='btn-hover color-8' onClick={()=>setIsActive(false)}>About</Link>
           </li>
           <li>
-            <Link to='/resume' onClick={()=>setIsActive(false)}>Resume</Link>
+            <Link to='/resume' className='btn-hover color-8' onClick={()=>setIsActive(false)}>Resume</Link>
           </li>
-        </motion.ul>
+        </ul>
         <div className={`nav__footer ${isActive ? 'show' : 'hide'}`}>
           <h1>Contact</h1>
           <p>Email: Kevetic@outlook.com</p>
