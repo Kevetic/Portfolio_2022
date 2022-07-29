@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Portfolio_2022/static/css/main.1fafeb9e.css",
+    "main.js": "/Portfolio_2022/static/js/main.a4d915e1.js",
+    "static/js/787.1ed0c42c.chunk.js": "/Portfolio_2022/static/js/787.1ed0c42c.chunk.js",
+    "static/media/profile.JPG": "/Portfolio_2022/static/media/profile.2c379e7aedb7ca04e1da.JPG",
+    "static/media/eatsleepcoderepeat.jpg": "/Portfolio_2022/static/media/eatsleepcoderepeat.dca64ffe2b0446d9bfd3.jpg",
+    "index.html": "/Portfolio_2022/index.html",
+    "main.1fafeb9e.css.map": "/Portfolio_2022/static/css/main.1fafeb9e.css.map",
+    "main.a4d915e1.js.map": "/Portfolio_2022/static/js/main.a4d915e1.js.map",
+    "787.1ed0c42c.chunk.js.map": "/Portfolio_2022/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1fafeb9e.css",
+    "static/js/main.a4d915e1.js"
+  ]
+}
