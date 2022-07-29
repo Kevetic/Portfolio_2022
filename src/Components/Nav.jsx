@@ -18,17 +18,16 @@ import {
         <header>
           <ul>
             <li>
-              <Link to='/kevetic/resume'>Resume</Link>
+              <Link to='/'>About</Link>
             </li>
             <li>
-              <Link to='/kevetic/about'>About</Link>
+              <Link to='/resume'>Resume</Link>
             </li>
           </ul>
         </header>
         <Routes>
-          <Route path="/kevetic/"/>
-          <Route path="/kevetic/resume" element={<Resume />} />
-          <Route path="/kevetic/about" element={<About />} />
+          <Route path="/" element={<About />} />
+          <Route path="/resume" element={<Resume />} />
         </Routes>
       </Router>
 

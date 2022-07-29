@@ -22,7 +22,7 @@ function Intro() {
         </div>
         <div className='profile-info__container'>
           <h1>Kevin Le</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim ut tellus elementum sagittis vitae. Ornare aenean euismod elementum nisi quis eleifend quam adipiscing. Iaculis nunc sed augue lacus viverra. Auctor urna nunc id cursus metus aliquam eleifend mi in. Volutpat lacus laoreet non curabitur gravida arcu ac tortor dignissim. Imperdiet nulla malesuada pellentesque elit eget gravida cum sociis natoque. Mauris nunc congue nisi vitae suscipit. Aliquam eleifend mi in nulla posuere sollicitudin aliquam. Tristique sollicitudin nibh sit amet commodo nulla. Amet purus gravida quis blandit turpis. Id eu nisl nunc mi ipsum faucibus. At ultrices mi tempus imperdiet nulla malesuada pellentesque.
+          <p>I’ve been an engineer for a little over 5 years. Most of those years spent at a start up company in a front-end developer role. I have experience in the fundamentals such as HTML,CSS,Javascript and I’m experienced in the MERN stack, emphasis on React using tools such as redux and contextapi to help. i’ve also been exposed to sprinkles of other tech stacks and I like to consider myself a google search expert. I’m familiar with working in an agile environment. I have used to systems like WATSON,JIRA, WRIKE and Slack as ticket management, transactional and communication. 
           </p>
         </div>
       </div>

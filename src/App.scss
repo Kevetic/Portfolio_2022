@@ -1,9 +1,23 @@
 body {
-
+  background-color: rgba(41,86,111,1);
+  color: #fff;
+  & button {
+    color: #fff;
+    border: 2px solid #13636c;
+    margin: 5px;
+  }
+  & a {
+    color: white;
+    text-decoration: none;
+  }
+  & a:hover {
+    color: black !important;
+    text-decoration: underline !important;
+  }
 }
 header {
   background-color: transparent;
-  box-shadow: 1px 1px 1px black;
+  border-bottom: 1px solid rgb(36, 62, 77);
   & ul {
     margin: 0 auto;
     display: flex;
@@ -23,13 +37,13 @@ header {
   height: 100vh;
   width: 100vw;
   overflow: hidden;
-  animation: fadeIn 2s;
+  animation: fadeIn .5s;
 }
 .intro__button:hover {
     transition: .5s;
     font-size: 15px;
     box-shadow: 1px 1px 1px #13636c;
-    color: white !important;
+    color: #a3b5d7 !important;
 }
 .intro__button.show {
   padding: 20px;
@@ -39,7 +53,7 @@ header {
   cursor: pointer;
   border-radius: 10px;
   background-color: transparent;
-  color: #a3b5d7;
+  color: #fff;
   box-shadow: 2px 2px 2px #13636c;
   border: none;
 }
@@ -50,8 +64,10 @@ button.intro__button.hide {
   border-radius: 10px;
   cursor: pointer;
   margin-top: 5px;
+  width: 80px;
 }
 .intro.hide {
+  visibility: hidden;
   opacity: 0;
   background-color: black;
   position: absolute;
@@ -59,16 +75,18 @@ button.intro__button.hide {
   width: 100%;
   overflow: hidden;
   background: #FAF9F6;
-  animation: fadeOut 2s;
-  transition: 3s;
+  animation: fadeOut 1s;
+  transition: .3s;
 }
 
 @keyframes fadeOut {
   0% {opacity: 1;}
+  50% {opacity: .3;}
   100% {opacity: 0;} 
 } 
 @keyframes fadeIn {
   0% {opacity: 0;}
+  50% {opacity: .3;}
   100% {opacity: 1;} 
 } 
 
@@ -83,7 +101,7 @@ button.intro__button.hide {
   & .profile-info__container {
     width: 50%;
     font-size: 14px;
-    color: #a3b5d7;
+    color: #fff;
   }
   .profile-img__container {
     box-sizing:border-box;
@@ -99,3 +117,15 @@ button.intro__button.hide {
   }
 }
 
+.about__container {
+  width: 80%;
+  margin: 0 auto;
+  & .about-skills_container {
+    display: flex;
+    justify-content: center;
+  }
+  & li {
+    list-style: none;
+    margin: 10px;
+  }
+}
