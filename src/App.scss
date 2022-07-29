@@ -4,10 +4,13 @@ html {
   min-height: 100%;
 }
 body {
+  overflow-x: hidden;
   font-family: 'Play', sans-serif;
   min-height: 100%;
   background-image: url('./Components//assets/eatsleepcoderepeat.jpg');
   background-size: contain;
+  background-repeat: no-repeat;
+  background-color: rgb(17,17,17);
   color: #fff;
   & button {
     color: #fff;
@@ -154,5 +157,33 @@ header.hide {
   }
   & span {
     text-decoration: underline;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  header.show {
+    position: absolute;
+    width: 100%;
+  }
+  .about__container {
+    width: 80% !important;
+    padding: 0px;
+}
+  .profile__container {
+    width: 100vw;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .about__container{
+    margin-top: 80px;
+    padding: 10px;
+  }
+  .about__container .about-skills__container {
+    display: block;
+  }
+  .resume__container {
+    padding: 10px;
+    margin: 80px 0px 0px 30px;
+    width: 80% !important;
   }
 }
