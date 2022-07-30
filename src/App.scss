@@ -41,25 +41,17 @@
   box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
 }
 
-html {
-  min-height: 100%;
-}
 body {
   overflow-x: hidden;
   font-family: 'Play', sans-serif;
-  min-height: 100%;
   background-image: url('./Components/assets/[Hip\,\ Hop].png');
-  background-color: white;
-  color: #2D3741
+  background-size: cover;
+  color: #2D3741;
   & a {
     color: white;
     text-decoration: none;
   }
   & a:hover {
-    color:  #FBE4E0 !important;
-    text-decoration: underline !important;
-  }
-  & a:active {
     color:  #FBE4E0 !important;
     text-decoration: underline !important;
   }
@@ -100,7 +92,6 @@ header {
 header.show {
   font-size: 20px;
   transition: 1s;
-  width: 100vw;
   height: fit-content;
   background-color: transparent;
 }
@@ -141,12 +132,15 @@ header.hide {
   & .profile-info__container {
     width: 50%;
     font-size: 18px;
+    line-height: 1rem;
+    & h1, p {
+      margin: 5px;
+    }
   }
   .profile-img__container {
     box-sizing:border-box;
-    border: 1px solid black;
+    border: 4px dashed rgb(84, 173, 183, .5);
     height:22vw;
-    float:left;
     width:23vw;
     margin-right:1vw;
     border-radius:50%;
@@ -159,7 +153,7 @@ header.hide {
 .about__container {
   border-radius: 10px;
   background: rgb(255,255,255,255);
-  border: 1px solid rgb(84, 173, 183, .5);
+  border: 1px dashed rgb(84, 173, 183, .5);
   padding: 50px;
   opacity: .8;
   width: 80%;
@@ -179,8 +173,7 @@ header.hide {
 }
 .resume__container {
   border-radius: 10px;
-  background: white;
-  border: 1px solid rgb(84, 173, 183, .5);
+  border: 1px dashed rgb(84, 173, 183, .5);
   padding: 50px;
   opacity: .8;
   width: 80%;
