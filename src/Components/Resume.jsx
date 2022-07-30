@@ -8,7 +8,7 @@ function Resume() {
         animate={{width: "80%"}}
         exit={{x: window.innerWidth, transition: {duration: 1}}}>
         <h1>Resume: <span>Kevin Le</span></h1>
-        <p>Software Engineer with 5+ years of experience emphasising on front-end development using fundamentals such as HTML5, CSS and Javascript. While having a deep understanding of ReactJS, TypeScript with ContextAPI/Redux as state management. Github/Bitbucket for Version Control. Accustomed to working in an agile environment accompanied by systems such as JIRA, WRIKE, SLACK, WATSON. Extremely experienced with working in a team/group and can communicate extremely well.
+        <p>Software Engineer with 5+ years of experience emphasising on front-end development using fundamentals such as HTML5, CSS and Javascript. While having a deep understanding of ReactJS with ContextAPI/Redux as state managements and Github/Bitbucket for Version Control. Accustomed to working in an agile environment accompanied by systems such as JIRA, WRIKE, SLACK, WATSON. Extremely experienced with working in a team/group and can communicate proficiently.
         </p>
         <h2>Professional Experience</h2>
         <div className='resume-skills_container'>

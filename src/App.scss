@@ -232,15 +232,19 @@ header.hide {
     justify-content: center;
   }
   .about__container{
-    margin-top: 80px;
-    padding: 10px;
+    padding: 10px 20px 20px 20px;
+    margin: 80px 0px 50px 30px;
+    width: 80% !important;
   }
   .about__container .about-skills__container {
     display: block;
   }
   .resume__container {
-    padding: 10px;
-    margin: 80px 0px 0px 30px;
+    padding: 10px 20px 20px 20px;
+    margin: 80px 0px 50px 30px;
     width: 80% !important;
+  }
+  .resume__container .profesional-exp__container {
+    display: block;
   }
 }
