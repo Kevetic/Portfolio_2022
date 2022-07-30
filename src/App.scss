@@ -110,6 +110,7 @@ header.hide {
   transition: 2s;
 }
 .intro.show {
+  border-radius: 10px;
   transition: 2s;
   height: 350px;
 }
@@ -134,7 +135,6 @@ header.hide {
   & .profile-info__container {
     width: 50%;
     font-size: 18px;
-    color: black;
   }
   .profile-img__container {
     box-sizing:border-box;

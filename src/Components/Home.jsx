@@ -23,7 +23,7 @@ function Home() {
   return (
     <motion.div
     initial={{width: 0}}
-    animate={{width: "80%"}}
+    animate={{width: "100%"}}
     exit={{x: window.innerWidth, transition: {duration: 1}}}
     >
     <div className={`intro ${isActive ? 'show' : 'hide'}`}>
