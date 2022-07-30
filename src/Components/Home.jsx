@@ -41,7 +41,7 @@ function Home() {
       <nav>
         <ul className={`nav-ul ${isActive ? 'show' : 'hide'}`}>
           <li>
-            <Link to='/' className='btn-hover color-8' onClick={()=>setIsActive(true)}>Home</Link>
+            <Link to='/home' className='btn-hover color-8' onClick={()=>setIsActive(true)}>Home</Link>
           </li>
           <li>
             <Link to='/about' className='btn-hover color-8' onClick={()=>setIsActive(false)}>About</Link>

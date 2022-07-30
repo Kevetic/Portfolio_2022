@@ -16,7 +16,7 @@ import {
        <Home/>
         <AnimatePresence>
           <Routes>
-            <Route exact path="/"/>
+            <Route exact path="/home"/>
             <Route path="/about" element={<About />} />
             <Route path="/resume" element={<Resume />} />
           </Routes>
