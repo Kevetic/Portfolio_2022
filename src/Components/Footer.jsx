@@ -4,8 +4,8 @@ function Footer() {
   return (
     <div className='footer'>
         <p>Contact:</p>
-        <p><a href="mailto:kevetic@outlook.com">Email:Kevetic@outlook.com</a></p>
-        <p><a href="github.com/kevetic">GitHub: @Kevetic</a></p>
+        <p>Email:<a href="mailto:kevetic@outlook.com">Kevetic</a></p>
+        <p>GitHub:<a href="github.com/kevetic">@Kevetic</a></p>
     </div>
   )
 }
