@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import {AnimatePresence, motion} from 'framer-motion'
-import About from './About'
-import Resume from './Resume'
+import { SocialIcon } from 'react-social-icons';
+import {motion} from 'framer-motion'
+
 import {
     BrowserRouter as Router,
     Routes,
@@ -51,9 +51,9 @@ function Home() {
           </li>
         </ul>
         <div className={`nav__footer ${isActive ? 'show' : 'hide'}`}>
-          <h1>Contact</h1>
-          <p>Email: Kevetic@outlook.com</p>
-          <p>Github: <a href='github.com/kevetic' target="_blank">Kevetic@github</a></p>
+            <SocialIcon url="https://instagram.com/kevetic" />
+            <SocialIcon url="https://discord.com/kevetic" />
+            <SocialIcon url="https://github.com/kevetic" />
         </div>
       </nav>
     </header>

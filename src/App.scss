@@ -49,7 +49,7 @@ body {
   font-family: 'Play', sans-serif;
   min-height: 100%;
   background-color: white;
-  color: black;
+  color: #2D3741
   & a {
     color: white;
     text-decoration: none;
@@ -66,6 +66,7 @@ body {
 h1, h2 ,h2 {
   font-size: 24px;
   background: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
+  color: #2D3741;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -96,9 +97,6 @@ header.show {
   transition: 1s;
   width: 100vw;
   height: fit-content;
-  & li:first-child {
-    text-decoration: underline;
-  }
 }
 header.hide {
   top: 0%;
@@ -121,7 +119,7 @@ header.hide {
   background: white;
   padding: 50px;
   & a {
-    text-decoration:underline;
+    margin: 10px;
   }
 }
 .nav__footer.hide {
@@ -176,11 +174,11 @@ header.hide {
 .resume__container {
   border-radius: 10px;
   background: white;
-  border: 1px solid rgb(84, 173, 183, .5);;
-  padding: 100px;
+  border: 1px solid rgb(84, 173, 183, .5);
+  padding: 20px;
   opacity: .9;
   width: 80%;
-  margin: 0 auto;
+  margin: 50px auto;
   font-size: 20px;
   & p, span {
     margin: 0px;
@@ -198,6 +196,21 @@ header.hide {
   }
   & span {
     text-decoration: underline;
+  }
+}
+
+.footer {
+  background-color: #2D3741;
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  color: white;
+  display: flex;
+  & p {
+    margin: 10px;
+  }
+  & a {
+    color: white;
   }
 }
 

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import {AnimatePresence, motion} from 'framer-motion'
 import About from './About'
 import Resume from './Resume'
@@ -7,8 +7,6 @@ import {
     BrowserRouter as Router,
     Routes,
     Route,
-    Link,
-    useNavigate
   } from "react-router-dom";
 
   

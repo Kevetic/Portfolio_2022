@@ -1,4 +1,5 @@
 import './App.scss';
+import Footer from './Components/Footer';
 import Nav from './Components/Nav'
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
   return (
     <div className={`App`}>
       <Nav/>
+      <Footer/>
     </div>
   );
 }
