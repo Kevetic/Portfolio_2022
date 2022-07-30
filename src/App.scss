@@ -48,6 +48,7 @@ body {
   overflow-x: hidden;
   font-family: 'Play', sans-serif;
   min-height: 100%;
+  background-image: url('./Components/assets/[Hip\,\ Hop].png');
   background-color: white;
   color: #2D3741
   & a {
@@ -76,6 +77,7 @@ nav {
 }
 .nav-ul.show {
   padding: 17px;
+  background: transparent;
 }
 .nav-ul.hide {
   padding: 20px;
@@ -100,6 +102,7 @@ header.show {
   transition: 1s;
   width: 100vw;
   height: fit-content;
+  background-color: transparent;
 }
 header.hide {
   top: 0%;
@@ -120,7 +123,7 @@ header.hide {
 .nav__footer {
   margin: 0 auto;
   font-size: 18px;
-  background: white;
+  background: transparent;
   padding: 50px;
   & a {
     margin: 10px;
@@ -181,7 +184,7 @@ header.hide {
   padding: 20px;
   opacity: .9;
   width: 80%;
-  margin: 50px auto;
+  margin: 0px auto;
   font-size: 20px;
   & p, span {
     margin: 0px;
