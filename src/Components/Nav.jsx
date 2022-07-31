@@ -8,6 +8,7 @@ import {
     Routes,
     Route,
   } from "react-router-dom";
+import Loader from './Loader'
 
   
   function Nav() {
@@ -16,6 +17,7 @@ import {
        <Home/>
         <AnimatePresence>
           <Routes>
+            <Route exact path="/" element={<Loader/>}/>
             <Route exact path="/home" element={<Home/>}/>
             <Route path="/about" element={<About />} />
             <Route path="/resume" element={<Resume />} />

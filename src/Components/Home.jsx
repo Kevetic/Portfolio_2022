@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { SocialIcon } from 'react-social-icons';
 import {motion} from 'framer-motion'
+import k from './assets/K.png'
+import Loader from './Loader';
 
 import {
     BrowserRouter as Router,
@@ -10,19 +12,20 @@ import {
 
 function Home() {
     const [isActive, setIsActive] = useState(true)
+    const [heroActive, setHeroActive] = useState(true)
     let navigate = useNavigate()
 
     useEffect(() => {
         if(window.location.reload){
-            navigate('/Portfolio_2022')
+            navigate('/porfolio_2022')
         }
     }, [])
     
   return (
     <motion.div
-    initial={{width: 0}}
-    animate={{width: "100%"}}
-    exit={{x: window.innerWidth, transition: {duration: 1}}}
+    initial={{width: 0,  opacity: 0, transition: {duration: 1}}}
+    animate={{width: "100%", opacity:1, transition: {duration: 1}}}
+    exit={{x: window.innerWidth, transition: {duration: .5}}}
     >
     <div className={`intro ${isActive ? 'show' : 'hide'}`}>
       <div className='profile__container'>
@@ -38,14 +41,35 @@ function Home() {
     <header className={isActive ? 'show' : 'hide'}>
       <nav>
         <ul className={`nav-ul ${isActive ? 'show' : 'hide'}`}>
+          <motion.li
+          initial={{opacity: 0}}
+          animate={{opacity: 1, transform: {duration: 3}}}
+          >
+            <Link to='/' className={`btn-hover color-8 nav__bar-k ${heroActive ?  'show' : 'hide'}`}
+              onClick={()=> {
+              setHeroActive(false)
+              setIsActive(false)
+            }}>
+              <img src={k}/>
+            </Link>
+          </motion.li>
           <li>
-            <Link to='/home' className='btn-hover color-8' onClick={()=>setIsActive(true)}>Home</Link>
+            <Link to='/home' className='btn-hover color-8' onClick={()=>{
+              setIsActive(true)
+              setHeroActive(false)
+              }}>Home</Link>
           </li>
           <li>
-            <Link to='/about' className='btn-hover color-8' onClick={()=>setIsActive(false)}>About</Link>
+            <Link to='/about' className='btn-hover color-8' onClick={()=>{
+              setHeroActive(true)
+              setIsActive(false)
+            }}>About</Link>
           </li>
           <li>
-            <Link to='/resume' className='btn-hover color-8' onClick={()=>setIsActive(false)}>Resume</Link>
+            <Link to='/resume' className='btn-hover color-8' onClick={()=>{
+              setHeroActive(true)
+              setIsActive(false)
+            }}>Resume</Link>
           </li>
         </ul>
         <div className={`nav__footer ${isActive ? 'show' : 'hide'}`}>

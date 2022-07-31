@@ -4,9 +4,8 @@ import {motion} from 'framer-motion'
 function About() {
   return (
     <motion.div className='about__container'
-        initial={{width: 0}}
-        animate={{width: "50%"}}
-        exit={{x: window.innerWidth, transition: {duration: 1}}}>
+        initial={{width: '0%'}}
+        animate={{width: "50%"}}>
         <h1>About Me: <span>Kevin Le</span></h1>
         <p>I’ve been an engineer for a little over 5 years. Most of those years spent at a start up company in a front-end developer role. i am a software developer who is passionate about tech and eager to always expand my knowledge and skills. I'd love to work with a company that matches my values of how I believe people should be treated and is reflected in how they treat their clients/customers. I’m excited to use my talents of strong interpersonal communication paired with my ability to adapt quickly alongside my skills in web development to become a part of a fast-paced, quality-driven team to build better experiences for a growing world. Feel free to take a look at the resume section of this portfolio.
           </p>
