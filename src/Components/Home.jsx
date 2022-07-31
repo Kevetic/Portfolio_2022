@@ -13,6 +13,8 @@ import {
 function Home() {
     const [isActive, setIsActive] = useState(true)
     const [heroActive, setHeroActive] = useState(true)
+    const [isOpen, setIsOpen] = useState(false)
+    console.log(isOpen)
     let navigate = useNavigate()
 
     useEffect(() => {
@@ -20,6 +22,10 @@ function Home() {
             navigate('/Porfolio_2022')
         }
     }, [])
+
+    const handleBurger = () => {
+      setIsOpen(!isOpen)
+    }
     
   return (
     <motion.div
@@ -40,6 +46,40 @@ function Home() {
     </div>
     <header className={isActive ? 'show' : 'hide'}>
       <nav>
+        <div className={`mobile__menu ${isOpen ? 'open' : 'close'}`} onClick={handleBurger}>
+        X
+        <ul className={`mobile__nav-ul ${isActive ? 'show' : 'hide'}`}>
+          <motion.li
+          initial={{opacity: 0}}
+          animate={{opacity: 1, transform: {duration: 3}}}
+          >
+            <Link to='/' className={`${heroActive ?  'show' : 'hide'}`}
+              onClick={()=> {
+              setHeroActive(false)
+              setIsActive(false)
+            }}>
+            </Link>
+          </motion.li>
+          <li>
+            <Link to='/home' className='' onClick={()=>{
+              setIsActive(true)
+              setHeroActive(false)
+              }}>Home</Link>
+          </li>
+          <li>
+            <Link to='/about' className='' onClick={()=>{
+              setHeroActive(true)
+              setIsActive(false)
+            }}>About</Link>
+          </li>
+          <li>
+            <Link to='/resume' className='' onClick={()=>{
+              setHeroActive(true)
+              setIsActive(false)
+            }}>Resume</Link>
+          </li>
+        </ul>
+        </div>
         <ul className={`nav-ul ${isActive ? 'show' : 'hide'}`}>
           <motion.li
           initial={{opacity: 0}}

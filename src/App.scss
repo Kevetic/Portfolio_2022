@@ -276,7 +276,19 @@ header.hide {
   }body .btn-hover {
     padding: 10px 10px;
   }
+  .nav-ul {
+    display: none;
+  }
+  .mobile__menu {
+    display: block;
+  }
 }
+@media only screen and (min-width: 600px) {
+  .mobile__menu {
+    display: none;
+  }
+}
+
 .loader__container p {
   font-size: 48px;
 }
@@ -303,4 +315,34 @@ header.hide {
   100% {
     opacity: 1;
   }
+}
+
+.mobile__menu {
+  top: 0;
+  left: 0;
+  background-color: #2D3741;
+  position: absolute;
+  font-size: 24px;
+  padding: 3px 11px;
+  border-width: 4px !important;
+  border-style: solid !important;
+  border-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376) 1 !important;
+  background-image: none !important;
+  & ul {
+    position: absolute;
+    display: inline-block;
+  }
+}
+
+.mobile__menu.open{
+  overflow: visible;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+  transition: 1s;
+}
+.mobile__menu.close{
+  overflow: hidden;
+  width: 20px;
+  transition: 1s;
 }
