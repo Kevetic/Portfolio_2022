@@ -19,7 +19,7 @@ function Home() {
 
     useEffect(() => {
         if(window.location.reload){
-            navigate('/Porfolio_2022')
+            navigate('/Portfolio_2022')
         }
     }, [])
 
