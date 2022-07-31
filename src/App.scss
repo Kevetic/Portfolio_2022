@@ -245,9 +245,18 @@ header.hide {
     padding: 0px;
 }
   .profile__container {
-    width: 100vw;
+    width: 100%;
+    display: block;
     margin: 0 auto;
     justify-content: center;
+    text-align: -webkit-center;
+  }
+  .profile__container .profile-img__container {
+    height: 50vh;
+    width: 50vw;
+  }
+  .profile-info__container {
+    padding: 20px;
   }
   .about__container{
     padding: 10px 20px 20px 20px;
