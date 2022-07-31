@@ -240,6 +240,9 @@ header.hide {
     position: absolute;
     width: 100%;
   }
+  .loader__container {
+    gap: 0 !important;
+  }
   .about__container {
     width: 80% !important;
     padding: 0px;
@@ -252,8 +255,8 @@ header.hide {
     text-align: -webkit-center;
   }
   .profile__container .profile-img__container {
-    height: 50vh;
-    width: 50vw;
+    height: 23vh;
+    width: 40vw;
   }
   .profile-info__container {
     padding: 20px;
