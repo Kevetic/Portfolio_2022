@@ -120,8 +120,8 @@ function Home() {
         </ul>
         <div className={`nav__footer ${isActive ? 'show' : 'hide'}`}>
             <h1>Socials:</h1>
-            <SocialIcon url="https://instagram.com/kevetic" />
-            <SocialIcon url="https://discord.com/kevetic" />
+            {/* <SocialIcon url="https://instagram.com/kevetic" /> */}
+            {/* <SocialIcon url="https://discord.com/kevetic" /> */}
             <SocialIcon url="https://github.com/kevetic" />
         </div>
       </nav>
