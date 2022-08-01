@@ -17,7 +17,6 @@ function App() {
     <div className={`App`}>
       {display}
       {/* <Loader/> */}
-      {/* <Nav/> */}
       <Footer/>
     </div>
   );

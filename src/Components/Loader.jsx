@@ -1,41 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import k from './assets/K.png'
 import {motion} from 'framer-motion'
 
 function Loader() {
-    const [imageOne, setImageOne] = useState()
-    const [imageTwo, setImageTwo] = useState()
-    const [isToggle, setIsToggle] = useState(false)
-
-    // useEffect(() => {
-    //     setIsToggle(true)
-    //     displayImage()
-    //     setTimeout(() => {
-    //         addFloat()
-    //         setTimeout(() => {
-    //             addEvin()
-    //         },2000)
-    //     },1000)
-    // }, [isToggle])
-
-    // const addEvin = () => {
-    //     return setImageTwo(<div className='loader__img-evin'/>)
-    // }
-
-    // const addFloat = () => {
-    //     return setImageOne(<img id='float' className={`loader__img ${isToggle ? 'fadeIn' : 'fadeOut'}`} src={k}/>)
-    // }
-
-    // const displayImage = () => {
-    //     return (
-    //         setImageOne(
-    //         <img className={`loader__img ${isToggle ? 'fadeIn' : 'fadeOut'}`} src={k}/>
-    //         )
-    //     )
-    // }
-
   return (
-    <>
     <motion.div className='loader__container'
     drag
     whileDrag={{ scale: 2 }}
@@ -100,10 +67,7 @@ function Loader() {
         initial={{right:'0', top: '0', opacity: 0}}
         animate={{position:'relative', opacity:1, right:'60%', top: '50%', transition: {duration: 3.8}}}
         >e</motion.p>
-        {/* {imageOne}
-        {imageTwo} */}
     </motion.div>
-    </>
   )
 }
 

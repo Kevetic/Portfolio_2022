@@ -41,6 +41,12 @@ function Home() {
           <h1>Kevin Le</h1>
           <p>Software Developer</p>
           <p>Kansas City, MO</p>
+          <span>"Most of my Years were spent at a start up company in a front-end developer role. I am passionate about tech and eager to always expand my knowledge and skills"...  
+            <Link className='about-readmore' to='/about'onClick={()=>{
+              setHeroActive(true)
+              setIsActive(false)
+            }} >Read More</Link></span>
+
         </div>
       </div>
     </div>
